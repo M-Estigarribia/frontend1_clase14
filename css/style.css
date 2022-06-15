@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: sticky; top: 0; 
+    font-size: 2rem;
+    z-index: 10;
+}
+
+#ofertas{
+    background-color:#1CD1B0;
+    height: 30px;
+    font-size: 1.5rem; 
+}
+
+nav{
+    height: 80px;
+    background-color:#00669F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 8px 10px grey;
+}
+
+section{
+    display: flex;
+    margin-top: 190px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.slide{
+    box-sizing: content-box;
+    min-width: 400px;
+    max-width: 400px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#F3F3F3;
+    position: relative;
+    height: 600px;
+    box-shadow: 0px 8px 10px grey;
+    margin-bottom: 7vh;
+}
+
+.slide img:nth-child(1){
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.slide img:nth-child(2){
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img:nth-child(3){
+    position: absolute;
+    top:210px;
+    border-radius: 50%;
+}
+
+
+.slide>div{
+    max-width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 150px;
+}
+
+.slide>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    background-color:#00669F;
+    box-shadow: 0px 8px 10px grey;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.slide a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #00669F;
+    margin-top: 150px;
+    height: 70px;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 90px;
+    padding-right: 20px;
+}
+
+.galeria{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;  
+}
+
+.plus-button{
+    position: fixed;
+    bottom: 6vh;
+    right: 2vw;
+}
+
+.plus-button img{
+    height: 10vh;
+    width: 10vh;
+}
+
+@media (max-width:480px){
+    .slide{
+        width: 100vw;
+    }
+}
